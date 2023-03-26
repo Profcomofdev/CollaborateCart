@@ -1,0 +1,58 @@
+/* Phone styles */
+@media (max-width: 767px) {
+ /* Header styles */
+ header {
+  padding: 20px;
+ }
+
+ header h1 {
+  font-size: 36px;
+ }
+
+ header nav {
+  display: none;
+ }
+
+ header button {
+  display: block;
+ }
+
+ /* Feature section styles */
+ .feature {
+  padding: 40px 20px;
+ }
+
+ .feature h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+ }
+
+ .feature p {
+  font-size: 16px;
+  margin-bottom: 10px;
+ }
+
+ /* CTA section styles */
+ .cta {
+  padding: 60px 20px;
+ }
+
+ .cta h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+ }
+
+ .cta button {
+  font-size: 20px;
+  padding: 8px 16px;
+ }
+
+ /* Footer styles */
+ footer {
+  padding: 10px;
+ }
+
+ footer p {
+  font-size: 12px;
+ }
+}

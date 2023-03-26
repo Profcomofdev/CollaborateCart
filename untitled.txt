@@ -1,0 +1,306 @@
+HTML:
+
+php
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CollaborateCart - совместные покупки, больше скидок</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>CollaborateCart</h1>
+		<nav>
+			<ul>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Как это работает</a></li>
+				<li><a href="#">Преимущества</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="hero">
+		<div class="hero-text">
+			<h2>Покупайте оптом вместе</h2>
+			<p>Совместные покупки - это просто, удобно и выгодно. Присоединяйтесь к нашей платформе и экономьте вместе с нами!</p>
+			<button>Присоединиться сейчас</button>
+		</div>
+		<div class="hero-image">
+			<img src="https://via.placeholder.com/300x300" alt="CollaborateCart Hero Image">
+		</div>
+	</section>
+	<section class="features">
+		<div class="feature">
+			<img src="https://via.placeholder.com/150x150" alt="Feature Icon">
+			<h3>Больше скидок</h3>
+			<p>Совместные покупки позволяют получить скидки на оптовые закупки, которых не смог бы получить один человек.</p>
+		</div>
+		<div class="feature">
+			<img src="https://via.placeholder.com/150x150" alt="Feature Icon">
+			<h3>Просто и удобно</h3>
+			<p>Платформа CollaborateCart очень проста в использовании. Присоединяйтесь к группам покупателей и получайте скидки уже сегодня.</p>
+		</div>
+		<div class="feature">
+			<img src="https://via.placeholder.com/150x150" alt="Feature Icon">
+			<h3>Безопасность</h3>
+			<p>Мы гарантируем безопасность ваших данных и платежей. CollaborateCart - это надежная платформа для совместных покупок.</p>
+		</div>
+	</section>
+	<section class="call-to-action">
+		<h2>Присоединяйтесь к нам уже сегодня!</h2>
+		<button>Присоединиться сейчас</button>
+	</section>
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Как это работает</a></li>
+				<li><a href="#">Пр
+
+
+
+Cajemam Carente
+Прожолжи с <footer>
+		<nav>
+			<ul>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Как это работает</a></li>
+				<li><a 
+
+ефты</a></li>
+
+```
+CSS:
+
+css
+Copy code
+/* Reset styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Header styles */
+header {
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+header ul li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+header ul li:first-child {
+	margin-left: 0;
+}
+
+header ul li a {
+	font-size: 18px;
+	font-weight: bold;
+	transition: color 0.2s ease-in-out;
+}
+
+header ul li a:hover {
+	color: #ff5500;
+}
+
+/* Hero section styles */
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	background-image: url(https://via.placeholder.com/1920x1080);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.hero::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+	max-width: 600px;
+	text-align: center;
+	z-index: 1;
+}
+
+.hero-text h2 {
+	font-size: 48px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.hero-text p {
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 40px;
+}
+
+.hero-text button {
+	background-color: #ff5500;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.hero-text button:hover {
+	background-color: #d14f00;
+}
+
+.hero-image {
+	position: absolute;
+	bottom: -50px;
+	right: 0;
+}
+
+/* Features section styles */
+.features {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 80px 0;
+}
+
+.feature {
+	max-width: 350px;
+	text-align: center;
+	margin: 0 20px;
+	margin-bottom: 40px;
+}
+
+.feature img {
+	margin-bottom: 20px;
+}
+
+.feature h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.feature p {
+	font-size: 18px;
+	line-height: 1.5;
+	color
+
+
+
+Cajemam Carente
+Продолжи с .feature p {
+	font-size: 18px;
+	line-height: 1.5;
+	color
+
+: #777;
+margin-bottom: 20px;
+}
+
+/* CTA section styles */
+.cta {
+background-color: #ff5500;
+padding: 80px;
+text-align: center;
+color: #fff;
+}
+
+.cta h2 {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 40px;
+}
+
+.cta button {
+background-color: #fff;
+color: #ff5500;
+font-size: 24px;
+font-weight: bold;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.2s ease-in-out;
+}
+
+.cta button:hover {
+background-color: #f4f4f4;
+}
+
+/* Footer styles */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+footer nav ul li a {
+color: #fff;
+}
+
+footer p {
+margin-top: 20px;
+font-size: 14px;
+}
+
+csharp
+Copy code
+
+This is just an example, and you can customize it further to suit your needs. You can add more sections, adjust the colors, fonts, and sizes, and make it responsive for different screen sizes.
+
+
+
+
+
